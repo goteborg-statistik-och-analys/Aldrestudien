@@ -10,6 +10,7 @@ format:
     number-sections: false
     fig-cap-location: bottom
     output-file: index.html
+    embed-resources: false
 execute:
   echo: false
   cache: true
