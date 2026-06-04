@@ -1,0 +1,275 @@
+/* Anpassad brödtext */
+body {
+  font-family: Aptos, sans-serif;
+  font-size: 11pt;
+}
+
+
+/* Anpassade rubriker */
+h1 {
+  font-family: Cambria, serif;
+  font-size: 24pt;
+  color: #3F5664;
+}
+
+h2 {
+  font-family: Cambria, serif;
+  font-size: 18pt;
+  color: #3F5664;
+}
+
+h3 {
+  font-family: Cambria, serif;
+  font-size: 14pt;
+  color: #3F5664;
+}
+
+
+/* Visa ej rubrik */
+#title-block-header {
+  display: none;  /* Dölj Quarto-titeln */
+}
+
+
+body {
+  max-width: 1100px; /* Justera bredden efter behov */
+  margin: 0 auto; /* Centrerar innehållet på sidan */
+}
+
+
+#TOC .nav-link.active {
+    font-weight: bold;
+    color: #3F5664 !important; /* Ändra till önskad färg */
+    border-left: 2px solid #3F5664;
+}
+
+#TOC .nav-link {
+    font-size: 12px; /* Sätt den storlek du vill ha här, t.ex. 12px */
+}
+
+#TOC .nav-link:hover {
+    color: #3F5664 !important; /* Färg vid hover, t.ex. röd */
+}
+
+#toc-title {
+    font-weight: bold !important;
+    color: #3F5664 !important;
+    font-size: 18px !important;
+}
+
+#TOC {
+    margin-left: 30px;
+    background-color: #F5F7F9;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Justera även container för TOC */
+.sidebar-navigation {
+    width: 320px !important;
+}
+
+
+
+th, td {
+  vertical-align: middle;  /* Detta centrerar texten vertikalt */
+}
+
+/* Anpassa bredden på den första kolumnen */
+.table th:first-child, .table td:first-child {
+  width: 15em !important;
+}
+
+/* Anpassa bredden på alla kolumner utom den första */
+.table th:nth-child(n+2), .table td:nth-child(n+2) {
+  width: 4em !important;  /* Justera värdet efter behov */
+}
+
+
+/* Minimalistisk tabb-styling */
+.panel-tabset .nav-tabs {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.panel-tabset .nav-link {
+  color: #999999;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.panel-tabset .nav-link:hover {
+  color: #333333;
+  border-bottom-color: #cccccc;
+}
+
+.panel-tabset .nav-link.active {
+  color: #3F5664;
+  background-color: transparent;
+  border-bottom-color: #3F5664;
+  font-weight: 600;
+}
+
+/* Lägg till instruktionstext för tabbar */
+.panel-tabset .nav-tabs {
+  position: relative;
+}
+
+.panel-tabset .nav-tabs::after {
+  content: "<-- Byt diagram med flikarna";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666666;
+  font-size: 12px;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+/* Diskret stil för ladda ner knappen */
+.btn-sm {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.download-container {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chart-wrapper:hover + .download-container {
+  opacity: 1;
+}
+
+/* Styla dropdown-menyns knappar */
+.custom-dropdown-content .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 8px 16px;
+  background: transparent;
+}
+
+.custom-dropdown-content .btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Ta bort normal knapp-styling från dropdown-items */
+.custom-dropdown-content .btn-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.custom-dropdown-content .btn-default:hover {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+/* Gör dropdown-menyknappen mindre och ändra bakgrundsfärg */
+.custom-download-menu {
+  font-size: 11px;
+  padding: 4px 8px;
+  background-color: #3399cc !important;
+  color: white !important;
+  border-color: #3399cc !important;
+}
+
+.custom-download-menu .fa {
+  font-size: 10px;
+}
+
+.custom-download-menu:hover {
+  background-color: #0076bc !important;
+  border-color: #0076bc !important;
+  opacity: 0.9;
+}
+
+/* Gör dropdown-innehållet mindre */
+.custom-dropdown-content {
+  min-width: 150px !important;
+  font-size: 11px;
+}
+
+.custom-dropdown-content .btn {
+  font-size: 11px;
+  padding: 6px 12px;
+}
+
+.custom-dropdown-content .fa {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+
+/* Styla helskärmsknappen samma som nedladdningsknappen */
+.custom-fullscreen-btn {
+  font-size: 11px;
+  padding: 4px 8px;
+  background-color: #3399cc !important;
+  color: white !important;
+  border-color: #3399cc !important;
+}
+
+.custom-fullscreen-btn .fa {
+  font-size: 10px;
+}
+
+.custom-fullscreen-btn:hover {
+  background-color: #0076bc !important;
+  border-color: #0076bc !important;
+  opacity: 0.9;
+}
+
+/* Säkerställ att tooltips syns i helskärm */
+.girafe_container_std {
+  position: relative;
+}
+
+/* Höj z-index för tooltips i helskärm */
+:fullscreen .tooltip {
+  z-index: 9999 !important;
+}
+
+:-webkit-full-screen .tooltip {
+  z-index: 9999 !important;
+}
+
+:-moz-full-screen .tooltip {
+  z-index: 9999 !important;
+}
+
+
+.highlight-box {
+  background-color: #D4DDE3;
+  border-left: 5px solid #3F5664;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: Aptos, sans-serif;  /* Samma som brödtext */
+}
+
+.highlight-box h2 {
+  font-family: Cambria, serif;  /* Samma som dina rubriker */
+  color: #3F5664;
+  margin-top: 0;
+  font-size: 16pt;  /* Lite mindre än vanlig h2 */
+  font-weight: 600;
+}
+
+.highlight-box h3 {
+  font-family: Cambria, serif;  /* Samma som dina rubriker */
+  color: #3F5664;
+  margin-top: 0;
+  font-size: 13pt;  /* Lite mindre än vanlig h3 */
+  font-weight: 600;
+}
+
+
