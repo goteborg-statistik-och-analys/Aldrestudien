@@ -1,5 +1,5 @@
 ---
-title: "Analys om den äldre befolkningens utveckling"
+title: "Analys av den äldre befolkningens utveckling"
 format:
   html:
     css: styles.css  
@@ -10,10 +10,9 @@ format:
     number-sections: false
     fig-cap-location: bottom
     output-file: index.html
-    embed-resources: false
+    embed-resources: TRUE
 execute:
   echo: false
-  cache: true
 lang: sv
 editor: visual
 ---
@@ -54,7 +53,7 @@ karta_gr <- readRDS(here("input", "kommuner.rds"))
 
 ```
 
-# Analys om den äldre befolkningen
+# Analys av den äldre befolkningen
 
 Den äldre befolkningen förväntas öka snabbt under de kommande åren, både nationellt och i Göteborg. Mot den bakgrunden har vi fördjupat oss i gruppen för att besvara frågor om vad som driver ökningen, hur äldre bor i dag och i vilka delar av staden ökningen väntas bli störst.
 
